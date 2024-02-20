@@ -69,7 +69,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('barang/keluar') }}">
+                            <a class="nav-link {{ Request::is('barang/keluar') ? 'active' : '' }}" href="{{ url('barang/keluar') }}">
                                 <span data-feather="arrow-right" class="align-text-bottom"></span>
                                 Barang Keluar
                             </a>

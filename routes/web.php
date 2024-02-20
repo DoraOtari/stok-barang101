@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BarangKeluarController;
 use App\Http\Controllers\BarangMasukController;
+use App\Http\Controllers\LoginController;
 use App\Models\BarangMasuk;
 use Illuminate\Support\Facades\Route;
 
@@ -39,3 +40,6 @@ Route::get('/cari/produk', [BarangKeluarController::class, 'cari_produk']);
 Route::post('/transaksi/keluar', [BarangKeluarController::class, 'transaksi_produk']);
 
 Route::get('/barang/keluar', [BarangKeluarController::class, 'barang_keluar']);
+
+Route::post('/register', [LoginController::class, 'register']);
+Route::post('/login', [LoginController::class, 'authenticate']);

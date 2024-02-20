@@ -4,7 +4,7 @@
             <h4 class="card-title">List Barang Keluar</h4>
             <hr>
             <div class="table-responsive">
-                <table  class="table table-borderless">
+                <table id="example"  class="table table-borderless">
                     <thead>
                         <tr>
                             <th>No.</th>

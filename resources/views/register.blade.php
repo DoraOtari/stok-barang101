@@ -27,7 +27,8 @@
                     <div class="card-body">
                         <h4 class="card-title">Register</h4>
                         <p class="card-text">Daftar terlebih dahulu</p>
-                        <form action="" method="post">
+                        <form action="{{ url('register') }}" method="post">
+                            @csrf
                             <div class="mb-3">
                                 <label class="form-label">Nama Lengkap</label>
                                 <input type="text" class="form-control" name="nama_lengkap"
